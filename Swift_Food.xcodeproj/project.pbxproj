@@ -15,6 +15,8 @@
 		9B0B2E2C2800373F0033FEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B2E2A2800373F0033FEF0 /* LaunchScreen.storyboard */; };
 		9B4C2502280107BA00B78BA1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C2501280107BA00B78BA1 /* OnboardingViewController.swift */; };
 		9B4C250528010D4300B78BA1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C250428010D4300B78BA1 /* UIView+Extension.swift */; };
+		9B4C250728010FEF00B78BA1 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C250628010FEF00B78BA1 /* OnboardingSlide.swift */; };
+		9B4C25092801146900B78BA1 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C25082801146900B78BA1 /* OnboardingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		9B0B2E2D2800373F0033FEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B4C2501280107BA00B78BA1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		9B4C250428010D4300B78BA1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		9B4C250628010FEF00B78BA1 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
+		9B4C25082801146900B78BA1 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,7 @@
 		9B4C24FD280106FB00B78BA1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9B4C250628010FEF00B78BA1 /* OnboardingSlide.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				9B4C2501280107BA00B78BA1 /* OnboardingViewController.swift */,
+				9B4C25082801146900B78BA1 /* OnboardingCollectionViewCell.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -188,6 +194,8 @@
 				9B0B2E202800373F0033FEF0 /* AppDelegate.swift in Sources */,
 				9B0B2E222800373F0033FEF0 /* SceneDelegate.swift in Sources */,
 				9B4C250528010D4300B78BA1 /* UIView+Extension.swift in Sources */,
+				9B4C250728010FEF00B78BA1 /* OnboardingSlide.swift in Sources */,
+				9B4C25092801146900B78BA1 /* OnboardingCollectionViewCell.swift in Sources */,
 				9B4C2502280107BA00B78BA1 /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
