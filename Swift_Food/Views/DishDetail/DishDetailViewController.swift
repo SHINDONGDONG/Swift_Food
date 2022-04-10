@@ -16,6 +16,7 @@ class DishDetailViewController: UIViewController {
     @IBOutlet weak var descriptionLbl: UILabel! //가운데라벨
     @IBOutlet weak var nameField: UITextField! //주문자성명
     
+    var dish:Dish!
     
     // MARK: - Init
     override func viewDidLoad() {
@@ -25,6 +26,16 @@ class DishDetailViewController: UIViewController {
 
     // MARK: - Configures
     func configures(){
+        populateView()
+    }
+    
+    private func populateView() {
+        //image에 dish image를 담고
+        dishImageView.kf.setImage(with: dish.image?.asUrl)
+        //detail텍스트에 dish.name배열을 담고
+        titleLbl.text = dish.name
+        caloriesLbl.text = dish.formattedCalories
+        descriptionLbl.text = dish.description
         
     }
     

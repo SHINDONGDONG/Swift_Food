@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
     ]
     
     var populars : [Dish] = [
-        .init(id: "id1", name: "garri", description: "맛있똥", image: "https://picsum.photos/100/200", calories: 34),
+        .init(id: "id1", name: "garri", description: "헌법재판소에서 법률의 위헌결정, 탄핵의 결정, 정당해산의 결정 또는 헌법소원에 관한 인용결정을 할 때에는 재판관 6인 이상의 찬성이 있어야 한다. 훈장등의 영전은 이를 받은 자에게만 효력이 있고, 어떠한 특권도 이에 따르지 아니한다.행정각부의 장은 국무위원 중에서 국무총리의 제청으로 대통령이 임명한다. 모든 국민은 고문을 받지 아니하며, 형사상 자기에게 불리한 진술을 강요당하지 아니한다.모든 국민은 근로의 권리를 가진다. 국가는 사회적·경제적 방법으로 근로자의 고용의 증진과 적정임금의 보장에 노력하여야 하며, 법률이 정하는 바에 의하여 최저임금제를 시행하여야 한다.모든 국민은 직업선택의 자유를 가진다. 모든 국민은 통신의 비밀을 침해받지 아니한다. 제2항과 제3항의 처분에 대하여는 법원에 제소할 수 없다. 모든 국민은 인간다운 생활을 할 권리를 가진다.대통령은 제1항과 제2항의 처분 또는 명령을 한 때에는 지체없이 국회에 보고하여 그 승인을 얻어야 한다. 국가는 농수산물의 수급균형과 유통구조의 개선에 노력하여 가격안정을 도모함으로써 농·어민의 이익을 보호한다.", image: "https://picsum.photos/100/200", calories: 34),
         .init(id: "id2", name: "Chiken", description: "Your Chiken", image: "https://picsum.photos/100/200", calories: 1010),
         .init(id: "id3", name: "baka", description: "맛있똥", image: "https://picsum.photos/100/200", calories: 11),
         .init(id: "id4", name: "pizaa", description: "맛있똥", image: "https://picsum.photos/100/200", calories: 56),
@@ -117,6 +117,23 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
         default: return UICollectionViewCell()
         }
         
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoryCollectionView {
+        }else {
+            let controller =
+            DishDetailViewController.instantiate()
+            //컨트롤러에서 dish 타입이 populars이면, specials이면
+            //각각 다른 배열을 넘겨준다.
+            controller.dish = collectionView ==
+            popularCollectionView ?
+            populars[indexPath.row] :
+            specials [indexPath.row]
+//            navigationController?.present(controller, animated: true)
+            navigationController?.pushViewController(controller, animated: true)
+            
+        }
     }
     
     

@@ -325,9 +325,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ApX-iz-K21">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="613"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Y1v-AC-gsd" userLabel="verti">
                                 <rect key="frame" x="16" y="629" width="382" height="217"/>
                                 <subviews>
@@ -351,7 +348,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef8-lE-igS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ef8-lE-igS">
                                         <rect key="frame" x="0.0" y="40" width="382" height="45"/>
                                         <attributedString key="attributedText">
                                             <fragment content="dsfasdfsdfdsfdsafdsfsdfdsfasdfsdfdsfdsafdsfsdfdsfasdfsdfdsfdsafdsfsdfdsfasdfsdfdsfdsafdsfsdf">
@@ -393,6 +390,9 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ApX-iz-K21">
+                                <rect key="frame" x="0.0" y="-9" width="414" height="613"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BKI-ME-ic0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
