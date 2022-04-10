@@ -28,7 +28,7 @@ class CardView: UIView {
         //카드 모서리 둥글게
         layer.cornerRadius = 10
         //투명도
-        layer.shadowOpacity = 0.8
+        layer.shadowOpacity = 0.1
         cornerRadius = 10
     }
 }

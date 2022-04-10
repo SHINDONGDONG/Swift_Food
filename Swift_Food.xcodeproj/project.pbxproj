@@ -24,6 +24,9 @@
 		9B4C25092801146900B78BA1 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C25082801146900B78BA1 /* OnboardingCollectionViewCell.swift */; };
 		9B81E64F280291A7000169ED /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E64E280291A7000169ED /* String+Extension.swift */; };
 		9B81E652280298F2000169ED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E651280298F2000169ED /* CardView.swift */; };
+		9B81E6582802C77F000169ED /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E6562802C77F000169ED /* DishPortraitCollectionViewCell.swift */; };
+		9B81E6592802C77F000169ED /* DishPortraitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B81E6572802C77F000169ED /* DishPortraitCollectionViewCell.xib */; };
+		9B81E65B2802CA3B000169ED /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E65A2802CA3B000169ED /* Dish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		9B4C25082801146900B78BA1 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		9B81E64E280291A7000169ED /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9B81E651280298F2000169ED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9B81E6562802C77F000169ED /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B81E6572802C77F000169ED /* DishPortraitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishPortraitCollectionViewCell.xib; sourceTree = "<group>"; };
+		9B81E65A2802CA3B000169ED /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 		9B2122052802899D006B7EFC /* CollectionViewCells */ = {
 			isa = PBXGroup;
 			children = (
+				9B81E6532802C73B000169ED /* DishPortraitCollectionViewCell */,
 				9B212206280289A9006B7EFC /* CategoryCollectionViewCell */,
 			);
 			path = CollectionViewCells;
@@ -128,6 +135,7 @@
 			children = (
 				9B4C250628010FEF00B78BA1 /* OnboardingSlide.swift */,
 				9B21220E28028F0E006B7EFC /* DishCategory.swift */,
+				9B81E65A2802CA3B000169ED /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +182,15 @@
 				9B81E651280298F2000169ED /* CardView.swift */,
 			);
 			path = CardView;
+			sourceTree = "<group>";
+		};
+		9B81E6532802C73B000169ED /* DishPortraitCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9B81E6562802C77F000169ED /* DishPortraitCollectionViewCell.swift */,
+				9B81E6572802C77F000169ED /* DishPortraitCollectionViewCell.xib */,
+			);
+			path = DishPortraitCollectionViewCell;
 			sourceTree = "<group>";
 		};
 		B80B0A9626CCC815E5D75FB2 /* Frameworks */ = {
@@ -255,6 +272,7 @@
 			files = (
 				9B21220D28028A34006B7EFC /* CategoryCollectionViewCell.xib in Resources */,
 				9B0B2E2C2800373F0033FEF0 /* LaunchScreen.storyboard in Resources */,
+				9B81E6592802C77F000169ED /* DishPortraitCollectionViewCell.xib in Resources */,
 				9B0B2E292800373F0033FEF0 /* Assets.xcassets in Resources */,
 				9B0B2E272800373F0033FEF0 /* Main.storyboard in Resources */,
 			);
@@ -315,8 +333,10 @@
 				9B0B2E202800373F0033FEF0 /* AppDelegate.swift in Sources */,
 				9B0B2E222800373F0033FEF0 /* SceneDelegate.swift in Sources */,
 				9B2122042802410E006B7EFC /* HomeViewController.swift in Sources */,
+				9B81E6582802C77F000169ED /* DishPortraitCollectionViewCell.swift in Sources */,
 				9B21220C28028A34006B7EFC /* CategoryCollectionViewCell.swift in Sources */,
 				9B4C250528010D4300B78BA1 /* UIView+Extension.swift in Sources */,
+				9B81E65B2802CA3B000169ED /* Dish.swift in Sources */,
 				9B4C250728010FEF00B78BA1 /* OnboardingSlide.swift in Sources */,
 				9B4C25092801146900B78BA1 /* OnboardingCollectionViewCell.swift in Sources */,
 				9B81E652280298F2000169ED /* CardView.swift in Sources */,
