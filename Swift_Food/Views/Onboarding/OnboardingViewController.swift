@@ -39,10 +39,15 @@ class OnboardingViewController: UIViewController {
         OnboardingSlide(title: "Delicious Dishes", description: "내 탕수육!!", image: UIImage(named: "slide2" )!),
         OnboardingSlide(title: "Delicious Dishes", description: "역시 피자보단 치킨이지?", image: UIImage(named: "slide3" )!),
     ]
+        configures()
     }
     
 
     // MARK: - Configures
+    func configures(){
+        pageControl.numberOfPages = slides.count
+    }
+    
     @IBAction func nextBtnClicked(_ sender: UIButton) {
         if currentPage == slides.count-1 {
             //스토리보드에 있는 navigation controller 의 identifier를 명시해주고

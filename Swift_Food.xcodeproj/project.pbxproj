@@ -13,6 +13,7 @@
 		9B0B2E272800373F0033FEF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B2E252800373F0033FEF0 /* Main.storyboard */; };
 		9B0B2E292800373F0033FEF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B2E282800373F0033FEF0 /* Assets.xcassets */; };
 		9B0B2E2C2800373F0033FEF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B0B2E2A2800373F0033FEF0 /* LaunchScreen.storyboard */; };
+		9B2122042802410E006B7EFC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2122032802410E006B7EFC /* HomeViewController.swift */; };
 		9B4C2502280107BA00B78BA1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C2501280107BA00B78BA1 /* OnboardingViewController.swift */; };
 		9B4C250528010D4300B78BA1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C250428010D4300B78BA1 /* UIView+Extension.swift */; };
 		9B4C250728010FEF00B78BA1 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C250628010FEF00B78BA1 /* OnboardingSlide.swift */; };
@@ -28,6 +29,7 @@
 		9B0B2E282800373F0033FEF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B0B2E2B2800373F0033FEF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B0B2E2D2800373F0033FEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B2122032802410E006B7EFC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9B4C2501280107BA00B78BA1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		9B4C250428010D4300B78BA1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		9B4C250628010FEF00B78BA1 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 			path = Swift_Food;
 			sourceTree = "<group>";
 		};
+		9B212202280240E2006B7EFC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9B2122032802410E006B7EFC /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		9B4C24FD280106FB00B78BA1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +100,7 @@
 		9B4C24FE2801070600B78BA1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B212202280240E2006B7EFC /* Home */,
 				9B4C25002801071900B78BA1 /* Onboarding */,
 			);
 			path = Views;
@@ -193,6 +204,7 @@
 				9B0B2E242800373F0033FEF0 /* ViewController.swift in Sources */,
 				9B0B2E202800373F0033FEF0 /* AppDelegate.swift in Sources */,
 				9B0B2E222800373F0033FEF0 /* SceneDelegate.swift in Sources */,
+				9B2122042802410E006B7EFC /* HomeViewController.swift in Sources */,
 				9B4C250528010D4300B78BA1 /* UIView+Extension.swift in Sources */,
 				9B4C250728010FEF00B78BA1 /* OnboardingSlide.swift in Sources */,
 				9B4C25092801146900B78BA1 /* OnboardingCollectionViewCell.swift in Sources */,
