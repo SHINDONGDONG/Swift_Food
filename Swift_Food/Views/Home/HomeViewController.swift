@@ -32,7 +32,7 @@ class HomeViewController: UIViewController {
     ]
     
     var specials: [Dish] = [
-        .init(id: "id1", name: "Fried", description: "마늘맛", image: "https://picsum.photos/200/300", calories: 34),
+        .init(id: "id1", name: "Fried", description: "마늘맛", image: "https://picsum.photos/200/300 ", calories: 34),
         .init(id: "id2", name: "Pott", description: "Your Chiken", image: "https://picsum.photos/100/200", calories: 1010),
         .init(id: "id3", name: "Ham", description: "캬캬", image: "https://picsum.photos/100/200", calories: 11),
         .init(id: "id4", name: "Zizzz", description: "띵띵", image: "https://picsum.photos/100/200", calories: 56),
