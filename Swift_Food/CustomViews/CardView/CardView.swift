@@ -29,6 +29,8 @@ class CardView: UIView {
         layer.cornerRadius = 10
         //투명도
         layer.shadowOpacity = 0.1
+        //쉐도우 레디우스
+        layer.shadowRadius = 10
         cornerRadius = 10
     }
 }

@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var popularCollectionView: UICollectionView!
+    @IBOutlet weak var specialsCollectionView: UICollectionView!
     
     
     var categories:[DishCategory] = [
@@ -28,7 +29,14 @@ class HomeViewController: UIViewController {
         .init(id: "id3", name: "baka", description: "맛있똥", image: "https://picsum.photos/100/200", calories: 11),
         .init(id: "id4", name: "pizaa", description: "맛있똥", image: "https://picsum.photos/100/200", calories: 56),
         .init(id: "id5", name: "Yeah!", description: "맛있똥", image: "https://picsum.photos/100/200", calories: 1003),
-        
+    ]
+    
+    var specials: [Dish] = [
+        .init(id: "id1", name: "Fried", description: "마늘맛", image: "https://picsum.photos/200/300", calories: 34),
+        .init(id: "id2", name: "Pott", description: "Your Chiken", image: "https://picsum.photos/100/200", calories: 1010),
+        .init(id: "id3", name: "Ham", description: "캬캬", image: "https://picsum.photos/100/200", calories: 11),
+        .init(id: "id4", name: "Zizzz", description: "띵띵", image: "https://picsum.photos/100/200", calories: 56),
+        .init(id: "id5", name: "순대국", description: "국밥", image: "https://picsum.photos/200/300", calories: 1003),
     ]
     
     // MARK: - Init
@@ -55,6 +63,13 @@ class HomeViewController: UIViewController {
             nibName: DishPortraitCollectionViewCell.identifier,
             bundle: nil),
             forCellWithReuseIdentifier: DishPortraitCollectionViewCell.identifier)
+        
+        specialsCollectionView.register(UINib(
+            nibName: DishLandscapeCollectionViewCell.identifier,
+            bundle: nil),
+            forCellWithReuseIdentifier: DishLandscapeCollectionViewCell.identifier)
+        
+
     }
 }
 
@@ -67,6 +82,9 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
             return categories.count
         case popularCollectionView:
             return populars.count
+            //sepcial콜렉션 뷰일때
+        case specialsCollectionView:
+            return specials.count
         default: return 0
         }
     }
@@ -88,6 +106,13 @@ extension HomeViewController:UICollectionViewDelegate,UICollectionViewDataSource
                     as? DishPortraitCollectionViewCell else { return UICollectionViewCell() }
             //데이터를 cell에 populars배열로 보내준다.
             cell.setup(dish: populars[indexPath.row])
+            return cell
+        case specialsCollectionView:
+            guard let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: DishLandscapeCollectionViewCell.identifier, for: indexPath)
+                    as? DishLandscapeCollectionViewCell else { return UICollectionViewCell() }
+            //데이터를 cell에 populars배열로 보내준다.
+            cell.setup(dish: specials[indexPath.row])
             return cell
         default: return UICollectionViewCell()
         }
