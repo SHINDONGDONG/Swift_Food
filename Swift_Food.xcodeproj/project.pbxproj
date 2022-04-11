@@ -22,6 +22,9 @@
 		9B4C250528010D4300B78BA1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C250428010D4300B78BA1 /* UIView+Extension.swift */; };
 		9B4C250728010FEF00B78BA1 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C250628010FEF00B78BA1 /* OnboardingSlide.swift */; };
 		9B4C25092801146900B78BA1 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C25082801146900B78BA1 /* OnboardingCollectionViewCell.swift */; };
+		9B4FD9892804D46F0059CDFF /* DishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD9872804D46F0059CDFF /* DishListTableViewCell.swift */; };
+		9B4FD98A2804D46F0059CDFF /* DishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B4FD9882804D46F0059CDFF /* DishListTableViewCell.xib */; };
+		9B4FD98E2804DCA90059CDFF /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD98D2804DCA90059CDFF /* ListDishesViewController.swift */; };
 		9B81E64F280291A7000169ED /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E64E280291A7000169ED /* String+Extension.swift */; };
 		9B81E652280298F2000169ED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E651280298F2000169ED /* CardView.swift */; };
 		9B81E6582802C77F000169ED /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E6562802C77F000169ED /* DishPortraitCollectionViewCell.swift */; };
@@ -53,6 +56,9 @@
 		9B4C250428010D4300B78BA1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		9B4C250628010FEF00B78BA1 /* OnboardingSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSlide.swift; sourceTree = "<group>"; };
 		9B4C25082801146900B78BA1 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B4FD9872804D46F0059CDFF /* DishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishListTableViewCell.swift; sourceTree = "<group>"; };
+		9B4FD9882804D46F0059CDFF /* DishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DishListTableViewCell.xib; sourceTree = "<group>"; };
+		9B4FD98D2804DCA90059CDFF /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		9B81E64E280291A7000169ED /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9B81E651280298F2000169ED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9B81E6562802C77F000169ED /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -152,6 +158,7 @@
 		9B4C24FE2801070600B78BA1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9B4FD98B2804DC790059CDFF /* ListDishes */,
 				9B81E662280385B6000169ED /* DishDetail */,
 				9B212202280240E2006B7EFC /* Home */,
 				9B4C25002801071900B78BA1 /* Onboarding */,
@@ -162,6 +169,7 @@
 		9B4C24FF2801070E00B78BA1 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				9B4FD9832804D3EC0059CDFF /* TableViewCells */,
 				9B81E650280298E7000169ED /* CardView */,
 				9B2122052802899D006B7EFC /* CollectionViewCells */,
 			);
@@ -185,6 +193,31 @@
 				9B81E66528038864000169ED /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9B4FD9832804D3EC0059CDFF /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9B4FD9842804D4010059CDFF /* DishListTableViewCell */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		9B4FD9842804D4010059CDFF /* DishListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9B4FD9872804D46F0059CDFF /* DishListTableViewCell.swift */,
+				9B4FD9882804D46F0059CDFF /* DishListTableViewCell.xib */,
+			);
+			path = DishListTableViewCell;
+			sourceTree = "<group>";
+		};
+		9B4FD98B2804DC790059CDFF /* ListDishes */ = {
+			isa = PBXGroup;
+			children = (
+				9B4FD98D2804DCA90059CDFF /* ListDishesViewController.swift */,
+			);
+			path = ListDishes;
 			sourceTree = "<group>";
 		};
 		9B81E650280298E7000169ED /* CardView */ = {
@@ -299,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B21220D28028A34006B7EFC /* CategoryCollectionViewCell.xib in Resources */,
+				9B4FD98A2804D46F0059CDFF /* DishListTableViewCell.xib in Resources */,
 				9B0B2E2C2800373F0033FEF0 /* LaunchScreen.storyboard in Resources */,
 				9B81E6592802C77F000169ED /* DishPortraitCollectionViewCell.xib in Resources */,
 				9B0B2E292800373F0033FEF0 /* Assets.xcassets in Resources */,
@@ -356,11 +390,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4FD98E2804DCA90059CDFF /* ListDishesViewController.swift in Sources */,
 				9B0B2E242800373F0033FEF0 /* ViewController.swift in Sources */,
 				9B81E64F280291A7000169ED /* String+Extension.swift in Sources */,
 				9B81E6602803079D000169ED /* DishLandscapeCollectionViewCell.swift in Sources */,
 				9B81E664280385CF000169ED /* DishDetailViewController.swift in Sources */,
 				9B81E66628038864000169ED /* UIViewController+Extension.swift in Sources */,
+				9B4FD9892804D46F0059CDFF /* DishListTableViewCell.swift in Sources */,
 				9B21220F28028F0E006B7EFC /* DishCategory.swift in Sources */,
 				9B0B2E202800373F0033FEF0 /* AppDelegate.swift in Sources */,
 				9B0B2E222800373F0033FEF0 /* SceneDelegate.swift in Sources */,
