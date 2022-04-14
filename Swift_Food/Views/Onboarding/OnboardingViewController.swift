@@ -45,13 +45,13 @@ class OnboardingViewController: UIViewController {
 
     // MARK: - Configures
     func configures(){
-        let service = NetworkService()
-        let request = service.createRequest(route: .temp, method: .post,
-                              parameters: ["firstName" : "Emmanuel","lastname":"okwara"])
-        print("The URL IS: \(request?.url)")
-        print("The body: \(request?.httpBody)")
+//        let service = NetworkService()
+//        let request = service.createRequest(route: .temp, method: .post,
+//                              parameters: ["firstName" : "Emmanuel","lastname":"okwara"])
+//        print("The URL IS: \(request?.url)")
+//        print("The body: \(request?.httpBody)")
         
-        
+        NetworkService.shard.myFirstRequest()
         pageControl.numberOfPages = slides.count
     }
     

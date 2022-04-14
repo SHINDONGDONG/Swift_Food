@@ -49,6 +49,7 @@ class HomeViewController: UIViewController {
     func configures(){
 //        title = "Yummie"
         registerCells()
+
     }
     
     //cells를 레지스터 등록한다,

@@ -8,6 +8,43 @@
 import Foundation
 
 struct NetworkService {
+    //싱글톤 만들기
+    static let shard = NetworkService()
+    
+    private init(){}
+    
+    func myFirstRequest(){
+        request(route: .temp, method: .get, type: String.self, completion:{ _ in})
+    }
+    
+    private func request<T:Codable>(
+        route: Route,
+        method: Method,
+        parameters:[String: Any]? = nil,
+        type: T.Type,
+        completion: (Result<T,Error>) -> Void) {
+    
+            guard let request = createRequest(route: route, method: method, parameters: parameters) else {
+                completion(.failure(AppError.unkownError))
+                return
+            }
+                //url session으로 데이터를받아서 success일때 데이터를 넘긴다.
+            URLSession.shared.dataTask(with: request) { data, response, error in
+                var result: Result<Data,Error>?
+                if let data = data {
+                    result = .success(data)
+                    let responseString = String(data: data, encoding: .utf8) ?? "Could not stringify our data"
+                    print("The response is:\n\(responseString)")
+                }else if let error = error {
+                    result = .failure(error)
+                    print("the error is: \n\(error.localizedDescription)")
+                }
+                DispatchQueue.main.async {
+                    ///TODO decode our result and send back to the user
+                }
+            }.resume()
+    }
+    
     
     ///  function helps us to generate a urlRequest
     /// - Parameters:
@@ -15,7 +52,7 @@ struct NetworkService {
     ///   - method: 타입을 결정해준다
     ///   - parameters:
     /// - Returns: URLRequest
-    func createRequest(
+    private func createRequest(
         //경로가 될 것이다. 백엔드에서 리소스를 가져온다.
         route: Route,
         //get,put,post등 타입을 정함.
