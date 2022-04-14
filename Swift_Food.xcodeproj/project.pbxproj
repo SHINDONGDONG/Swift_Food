@@ -27,6 +27,9 @@
 		9B4FD98E2804DCA90059CDFF /* ListDishesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD98D2804DCA90059CDFF /* ListDishesViewController.swift */; };
 		9B4FD991280623740059CDFF /* ListOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD990280623740059CDFF /* ListOrdersViewController.swift */; };
 		9B4FD993280626DC0059CDFF /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD992280626DC0059CDFF /* Order.swift */; };
+		9B4FD99628062C9D0059CDFF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD99528062C9D0059CDFF /* NetworkService.swift */; };
+		9B4FD99828062D820059CDFF /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD99728062D820059CDFF /* Route.swift */; };
+		9B4FD99A28062E710059CDFF /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4FD99928062E710059CDFF /* Method.swift */; };
 		9B81E64F280291A7000169ED /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E64E280291A7000169ED /* String+Extension.swift */; };
 		9B81E652280298F2000169ED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E651280298F2000169ED /* CardView.swift */; };
 		9B81E6582802C77F000169ED /* DishPortraitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B81E6562802C77F000169ED /* DishPortraitCollectionViewCell.swift */; };
@@ -63,6 +66,9 @@
 		9B4FD98D2804DCA90059CDFF /* ListDishesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDishesViewController.swift; sourceTree = "<group>"; };
 		9B4FD990280623740059CDFF /* ListOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrdersViewController.swift; sourceTree = "<group>"; };
 		9B4FD992280626DC0059CDFF /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		9B4FD99528062C9D0059CDFF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		9B4FD99728062D820059CDFF /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		9B4FD99928062E710059CDFF /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		9B81E64E280291A7000169ED /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		9B81E651280298F2000169ED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9B81E6562802C77F000169ED /* DishPortraitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishPortraitCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 		9B0B2E1E2800373F0033FEF0 /* Swift_Food */ = {
 			isa = PBXGroup;
 			children = (
+				9B4FD99428062C8B0059CDFF /* Networking */,
 				9B4C250328010D3300B78BA1 /* Extensions */,
 				9B4C24FF2801070E00B78BA1 /* CustomViews */,
 				9B4C24FE2801070600B78BA1 /* Views */,
@@ -232,6 +239,16 @@
 				9B4FD990280623740059CDFF /* ListOrdersViewController.swift */,
 			);
 			path = ListOrders;
+			sourceTree = "<group>";
+		};
+		9B4FD99428062C8B0059CDFF /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9B4FD99528062C9D0059CDFF /* NetworkService.swift */,
+				9B4FD99728062D820059CDFF /* Route.swift */,
+				9B4FD99928062E710059CDFF /* Method.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		9B81E650280298E7000169ED /* CardView */ = {
@@ -404,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B4FD99628062C9D0059CDFF /* NetworkService.swift in Sources */,
 				9B4FD98E2804DCA90059CDFF /* ListDishesViewController.swift in Sources */,
 				9B0B2E242800373F0033FEF0 /* ViewController.swift in Sources */,
 				9B81E64F280291A7000169ED /* String+Extension.swift in Sources */,
@@ -411,7 +429,9 @@
 				9B81E664280385CF000169ED /* DishDetailViewController.swift in Sources */,
 				9B81E66628038864000169ED /* UIViewController+Extension.swift in Sources */,
 				9B4FD993280626DC0059CDFF /* Order.swift in Sources */,
+				9B4FD99A28062E710059CDFF /* Method.swift in Sources */,
 				9B4FD9892804D46F0059CDFF /* DishListTableViewCell.swift in Sources */,
+				9B4FD99828062D820059CDFF /* Route.swift in Sources */,
 				9B4FD991280623740059CDFF /* ListOrdersViewController.swift in Sources */,
 				9B21220F28028F0E006B7EFC /* DishCategory.swift in Sources */,
 				9B0B2E202800373F0033FEF0 /* AppDelegate.swift in Sources */,
