@@ -19,6 +19,7 @@
 		9B21220D28028A34006B7EFC /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B21220B28028A34006B7EFC /* CategoryCollectionViewCell.xib */; };
 		9B21220F28028F0E006B7EFC /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B21220E28028F0E006B7EFC /* DishCategory.swift */; };
 		9B3133FC2808CC2E00CF13C2 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3133FB2808CC2E00CF13C2 /* AppError.swift */; };
+		9B3133FE2808D1C500CF13C2 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3133FD2808D1C500CF13C2 /* ApiResponse.swift */; };
 		9B4C2502280107BA00B78BA1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C2501280107BA00B78BA1 /* OnboardingViewController.swift */; };
 		9B4C250528010D4300B78BA1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C250428010D4300B78BA1 /* UIView+Extension.swift */; };
 		9B4C250728010FEF00B78BA1 /* OnboardingSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4C250628010FEF00B78BA1 /* OnboardingSlide.swift */; };
@@ -58,6 +59,7 @@
 		9B21220B28028A34006B7EFC /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		9B21220E28028F0E006B7EFC /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
 		9B3133FB2808CC2E00CF13C2 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		9B3133FD2808D1C500CF13C2 /* ApiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
 		9B3FD43A464FAF1B4FF2C760 /* Pods-Swift_Food.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift_Food.debug.xcconfig"; path = "Target Support Files/Pods-Swift_Food/Pods-Swift_Food.debug.xcconfig"; sourceTree = "<group>"; };
 		9B4C2501280107BA00B78BA1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		9B4C250428010D4300B78BA1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				9B4FD99728062D820059CDFF /* Route.swift */,
 				9B4FD99928062E710059CDFF /* Method.swift */,
 				9B3133FB2808CC2E00CF13C2 /* AppError.swift */,
+				9B3133FD2808D1C500CF13C2 /* ApiResponse.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 				9B0B2E242800373F0033FEF0 /* ViewController.swift in Sources */,
 				9B81E64F280291A7000169ED /* String+Extension.swift in Sources */,
 				9B81E6602803079D000169ED /* DishLandscapeCollectionViewCell.swift in Sources */,
+				9B3133FE2808D1C500CF13C2 /* ApiResponse.swift in Sources */,
 				9B81E664280385CF000169ED /* DishDetailViewController.swift in Sources */,
 				9B81E66628038864000169ED /* UIViewController+Extension.swift in Sources */,
 				9B4FD993280626DC0059CDFF /* Order.swift in Sources */,

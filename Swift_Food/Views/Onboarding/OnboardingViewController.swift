@@ -51,7 +51,17 @@ class OnboardingViewController: UIViewController {
 //        print("The URL IS: \(request?.url)")
 //        print("The body: \(request?.httpBody)")
         
-        NetworkService.shard.myFirstRequest()
+        NetworkService.shard.myFirstRequest { (result) in
+            switch result {
+            case .success(let data):
+                for dish in data {
+                    print(dish.name ?? "")
+                }
+//                print("data: \(data)")
+            case .failure(let error):
+                print("is error: \(error)")
+            }
+        }
         pageControl.numberOfPages = slides.count
     }
     
